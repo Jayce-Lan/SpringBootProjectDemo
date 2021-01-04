@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.UserMapper">
+    
+    <resultMap id="userResultMap" type="com.example.pojo.User">
+        <id property="id" column="id"/>
+        <result property="userName" column="user_name" javaType="java.lang.String"/>
+        <result property="password" column="pass_word" javaType="java.lang.String"/>
+        <result property="age" column="age"/>
+        <result property="regTime" column="reg_time" javaType="java.util.Date"/>
+    </resultMap>
+    
+    <select id="selectUserOne" parameterType="int" resultMap="userResultMap">
+        select id, user_name, pass_word, age, reg_time
+        from user
+        where id = #{id}
+    </select>
+</mapper>
