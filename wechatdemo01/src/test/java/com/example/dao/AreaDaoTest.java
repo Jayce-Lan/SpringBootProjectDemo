@@ -34,7 +34,7 @@ class AreaDaoTest {
     void insertArea() {
         Area area = new Area();
         area.setAreaName("兴宁区");
-        area.setPriority(2);
+        area.setPriority(1);
         area.setCreateTime(new Date());
         int count = areaDao.insertArea(area);
         System.out.println(count == 1  ? "运行成功" : "运行失败");
