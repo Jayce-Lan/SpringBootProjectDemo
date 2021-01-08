@@ -19,23 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="788d9a68-9875-4966-a89a-98334e0e2977" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/service/TransactionManagementConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/AreaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/AreaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/impl/AreaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wechatdemo01.md" beforeDir="false" afterPath="$PROJECT_DIR$/../wechatdemo01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/DataSourceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/dao/DataSourceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/SessionFactoryConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/dao/SessionFactoryConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/dao/AreaDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/dao/AreaDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/DataSourceConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/SessionFactoryConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/controller/Hello.class" beforeDir="false" />
-    </list>
+    <list default="true" id="788d9a68-9875-4966-a89a-98334e0e2977" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +198,7 @@
       <updated>1609981193439</updated>
       <workItem from="1609981197908" duration="10863000" />
       <workItem from="1610000410421" duration="139000" />
-      <workItem from="1610065689874" duration="8020000" />
+      <workItem from="1610065689874" duration="8422000" />
     </task>
     <servers />
   </component>
@@ -249,22 +233,22 @@
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="421" y="94" key="FileChooserDialogImpl/0.0.1280.679@0.0.1280.679" timestamp="1609981227714" />
-    <state width="1237" height="333" key="GridCell.Tab.0.bottom" timestamp="1610073764916">
+    <state width="1237" height="310" key="GridCell.Tab.0.bottom" timestamp="1610074036473">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1610073764916" />
-    <state width="1237" height="333" key="GridCell.Tab.0.center" timestamp="1610073764916">
+    <state width="1237" height="310" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1610074036473" />
+    <state width="1237" height="310" key="GridCell.Tab.0.center" timestamp="1610074036473">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1610073764916" />
-    <state width="1237" height="333" key="GridCell.Tab.0.left" timestamp="1610073764916">
+    <state width="1237" height="310" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1610074036473" />
+    <state width="1237" height="310" key="GridCell.Tab.0.left" timestamp="1610074036473">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1610073764916" />
-    <state width="1237" height="333" key="GridCell.Tab.0.right" timestamp="1610073764916">
+    <state width="1237" height="310" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1610074036473" />
+    <state width="1237" height="310" key="GridCell.Tab.0.right" timestamp="1610074036473">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="333" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1610073764916" />
+    <state width="1237" height="310" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1610074036473" />
     <state width="1237" height="333" key="GridCell.Tab.1.bottom" timestamp="1610073764916">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
