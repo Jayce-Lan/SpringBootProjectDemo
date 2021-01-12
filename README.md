@@ -67,3 +67,63 @@
   - templates
   - `application.properties`----------【*springboot*主配置文件】
   - `mybatis-config.xml`----------【*mybatis*配置文件】
+
+
+
+## seckill
+
+> 秒杀业务
+
+### 项目准备工作
+
+#### 开发环境
+
+- jdk 1.8
+- mysql 8.0.22
+- maven 3.6.3
+- 开发工具：
+  - 编译器：idea
+  - 版本控制工具：git
+
+
+
+#### 关联框架
+
+- Spring 5.2.12
+- Spring MVC 5.2.12
+- MyBatis 3.4.6
+- junit 4.11【测试环境】
+
+
+
+### 项目具体信息
+
+#### 项目描述
+
+基于 *SSM （Spring + SpringMVC + MyBatis）* 框架整合的**秒杀系统**
+
+- 秒杀业务的核心就是对库存的处理
+- 秒杀事务的难点
+  - MySQL：事务 + 行级锁
+  - 高效处理竞争
+
+
+
+#### 项目目录
+
+- **main/java**
+- **main/resources**
+- **main/sql**【存放项目相关数据库语句】
+  - `schema.sql`----------【秒杀相关的数据库建表语句】
+- **main/webapp**
+
+
+
+### 秒杀功能
+
+- 秒杀接口暴露
+- 执行秒杀
+- 相关查询
+
+
+
