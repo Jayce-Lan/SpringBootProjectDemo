@@ -112,7 +112,23 @@
 #### 项目目录
 
 - **main/java**
+  - com.seckill.dao【存放持久层】
+  - com.seckill.dto【存放数据传输层/关注的是*web*与*service*之间的数据传递】
+    - `Exposer.java`----------【秒杀接口地址dto】
+    - `SeckillExecution.java`----------【秒杀执行结果dto】
+  - com.seckill.entity【存放实体类/关注的是业务封装】
+  - com.seckill.enums【存放枚举类】
+  - com.seckill.exception【存放异常类】
+    - `RepeatKillException.java`----------【继承自*SeckillException*，重复秒杀异常】
+    - `SeckillCloseException.java`----------【继承自*SeckillException*，秒杀关闭异常】
+    - `SeckillException.java`----------【继承自*RuntimeException*，秒杀相关业务异常】
+  - com.seckill.service【存放service层】
 - **main/resources**
+  - mapper【存放对应持久层的mybatis运行sql语句的配置文件】
+  - spring【存放spring配置文件】
+    - `spring-dao.xml`----------【spring持久层配置文件】
+  - `jdbc.properties`----------【jdbc配置文件】
+  - `mybatis-config.xml`----------【mybatis配置文件】
 - **main/sql**【存放项目相关数据库语句】
   - `schema.sql`----------【秒杀相关的数据库建表语句】
 - **main/webapp**
