@@ -143,3 +143,46 @@
 
 
 
+## springboot-mybatis-redis
+
+> 实现了 SpringBoot + MyBatis + Redis 整合的一个后端接口项目
+
+### 项目准备工作
+
+#### 开发环境
+
+- jdk 1.8
+- mysql 8.0.22
+- maven 3.6.3
+- 开发工具：
+  - 编译器：idea
+  - 版本控制工具：git
+  - 接口测试工具：postman
+
+
+
+#### 关联框架
+
+- mybatis 3.5.6
+- springboot 2.4.2（当前最新稳定版本）
+- junit 4（测试环境）
+
+
+
+#### 导入环境依赖
+
+- spring-boot-starter-web
+- mybatis-spring-boot-starter
+- spring-boot-starter-test
+- junit
+- mysql-connector-java
+- spring-boot-devtools
+
+
+
+### 项目具体信息
+
+#### SpringBoot热部署
+
+- SpringBoot 使用 devtools 进行热部署
+

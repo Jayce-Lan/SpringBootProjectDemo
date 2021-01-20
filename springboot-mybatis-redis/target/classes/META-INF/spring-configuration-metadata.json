@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "com.example.opensource",
+      "type": "com.example.pojo.Resource",
+      "sourceType": "com.example.pojo.Resource"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.example.opensource.language",
+      "type": "java.lang.String",
+      "sourceType": "com.example.pojo.Resource"
+    },
+    {
+      "name": "com.example.opensource.name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.pojo.Resource"
+    },
+    {
+      "name": "com.example.opensource.website",
+      "type": "java.lang.String",
+      "sourceType": "com.example.pojo.Resource"
+    }
+  ],
+  "hints": []
+}
