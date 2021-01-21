@@ -184,5 +184,12 @@
 
 #### SpringBoot热部署
 
-- SpringBoot 使用 devtools 进行热部署
+SpringBoot 使用 devtools 进行热部署
+
+
+
+#### 模板引擎
+
+- springboot 整合 freemarker
+- springboot 整合 thymeleaf
 

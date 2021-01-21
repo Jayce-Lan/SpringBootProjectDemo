@@ -50,6 +50,19 @@
 			<!-- 依赖不会传递，该项目依赖devtools -->
 			<optional>true</optional>
 		</dependency>
+
+		<!-- freemarker模板引擎依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+
+		<!-- thymeleaf模板引擎依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
