@@ -1,6 +1,6 @@
 package com.example.controller;
 
-import com.example.pojo.LeeJSONResult;
+import com.example.pojo.MyJSONResult;
 import com.example.pojo.Resource;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,9 +18,9 @@ public class HelloController {
     }
 
     @RequestMapping("/getResource")
-    public LeeJSONResult getResource() {
+    public MyJSONResult getResource() {
         Resource bean = new Resource();
         BeanUtils.copyProperties(resource, bean);
-        return LeeJSONResult.ok(bean);
+        return MyJSONResult.ok(bean);
     }
 }

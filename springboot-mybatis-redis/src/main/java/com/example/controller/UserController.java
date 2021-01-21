@@ -1,10 +1,8 @@
 package com.example.controller;
 
-import com.example.pojo.LeeJSONResult;
+import com.example.pojo.MyJSONResult;
 import com.example.pojo.User;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
@@ -32,7 +30,7 @@ public class UserController {
      */
     @RequestMapping("/getuserjson")
 //    @ResponseBody
-    public LeeJSONResult getUserJson() {
+    public MyJSONResult getUserJson() {
         User user = new User();
         user.setName("root");
         user.setAge(20);
@@ -40,6 +38,6 @@ public class UserController {
         user.setPassword("root");
 //        user.setDesc("Hello Administrator");
 
-        return LeeJSONResult.ok(user);
+        return MyJSONResult.ok(user);
     }
 }

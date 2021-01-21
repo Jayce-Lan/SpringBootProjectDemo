@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/static/js/jquery-3.5.1.min.js}"></script>
+</head>
+<body>
+    <h1>发生ajax异常</h1>
+    <script>
+        $.ajax({
+            url: "/err/ajaxerror",
+            type: "POST",
+            async: false,
+            success: function(data) {
+                debugger;
+                if(data.status == 200 && data.msg == "OK") {
+                    alert("success");
+                } else {
+                    alert("发生异常：" + data.msg);
+                }
+            },
+            error: function (response, ajaxOptions, thrownError) {
+                debugger;
+                alert("error");
+            }
+        });
+    </script>
+</body>
+</html>

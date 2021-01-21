@@ -1,6 +1,5 @@
 package com.example.pojo;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -15,7 +14,7 @@ import java.util.List;
  *  502：拦截用户token出错
  *  555：异常抛出信息
  */
-public class LeeJSONResult {
+public class MyJSONResult {
     //定义jackson对象
     private static final ObjectMapper MAPPER = new ObjectMapper();
     //相应业务状态
@@ -27,43 +26,43 @@ public class LeeJSONResult {
     
     private String ok;  //不使用
 
-    public LeeJSONResult(Integer status, String msg, Object data) {
+    public MyJSONResult(Integer status, String msg, Object data) {
         this.status = status;
         this.msg = msg;
         this.data = data;
     }
 
-    public LeeJSONResult(Object data) {
+    public MyJSONResult(Object data) {
         this.status = 200;
         this.data = data;
         this.msg = "OK";
     }
 
-    public LeeJSONResult() {
+    public MyJSONResult() {
     }
 
-    public static LeeJSONResult build(Integer status, String msg, Object data) {
-        return new LeeJSONResult(status, msg, data);
+    public static MyJSONResult build(Integer status, String msg, Object data) {
+        return new MyJSONResult(status, msg, data);
     }
 
-    public static LeeJSONResult ok(Object data) {
-        return new LeeJSONResult(data);
+    public static MyJSONResult ok(Object data) {
+        return new MyJSONResult(data);
     }
 
-    public static LeeJSONResult errorMsg(String msg) {
-        return new LeeJSONResult(500, msg, null);
+    public static MyJSONResult errorMsg(String msg) {
+        return new MyJSONResult(500, msg, null);
     }
 
-    public static LeeJSONResult errorMap(Object data) {
-        return new LeeJSONResult(501, "error", data);
+    public static MyJSONResult errorMap(Object data) {
+        return new MyJSONResult(501, "error", data);
     }
 
-    public static LeeJSONResult errorTokenMsg(String msg) {
-        return new LeeJSONResult(502, msg, null);
+    public static MyJSONResult errorTokenMsg(String msg) {
+        return new MyJSONResult(502, msg, null);
     }
 
-    public static LeeJSONResult errorException(String msg) {
-        return new LeeJSONResult(555, msg, null);
+    public static MyJSONResult errorException(String msg) {
+        return new MyJSONResult(555, msg, null);
     }
 
     public boolean isOK() {
@@ -78,10 +77,10 @@ public class LeeJSONResult {
      * @param clazz
      * @return
      */
-    public static LeeJSONResult formatToPojo(String jsonData, Class<?> clazz) {
+    public static MyJSONResult formatToPojo(String jsonData, Class<?> clazz) {
         try {
             if (clazz == null) {
-                return MAPPER.readValue(jsonData, LeeJSONResult.class);
+                return MAPPER.readValue(jsonData, MyJSONResult.class);
             }
             JsonNode jsonNode = MAPPER.readTree(jsonData);
             JsonNode data = jsonNode.get("data");
@@ -106,9 +105,9 @@ public class LeeJSONResult {
      * @param json
      * @return
      */
-    public static LeeJSONResult format(String json) {
+    public static MyJSONResult format(String json) {
         try {
-            return MAPPER.readValue(json, LeeJSONResult.class);
+            return MAPPER.readValue(json, MyJSONResult.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -121,7 +120,7 @@ public class LeeJSONResult {
      * @param clazz
      * @return
      */
-    public static LeeJSONResult formatToList(String jsonData, Class<?> clazz) {
+    public static MyJSONResult formatToList(String jsonData, Class<?> clazz) {
         try {
             JsonNode jsonNode = MAPPER.readTree(jsonData);
             JsonNode data = jsonNode.get("data");
