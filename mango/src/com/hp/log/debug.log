@@ -1,0 +1,38 @@
+2021-01-26 09:38:22 上午 [Thread: main][ Class:druid.sql.Connection >> Method: com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(Log4jFilter.java:132) ]
+DEBUG:{conn-10001,procId-11} connected
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Connection >> Method: com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(Log4jFilter.java:132) ]
+DEBUG:{conn-10001} closed
+2021-01-26 09:39:35 上午 [Thread: Druid-ConnectionPool-Create-252864198][ Class:druid.sql.Connection >> Method: com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(Log4jFilter.java:132) ]
+DEBUG:{conn-10002,procId-12} connected
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Connection >> Method: com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(Log4jFilter.java:132) ]
+DEBUG:{conn-10002} pool-connect
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Statement >> Method: com.alibaba.druid.filter.logging.Log4jFilter.statementLog(Log4jFilter.java:137) ]
+DEBUG:{conn-10002, pstmt-20000} created. select
+        id, name, nick_name, avatar, password, salt, email, mobile, status, dept_id, create_by, create_time,
+        last_update_by, last_update_time, del_flag
+        from wechatdemo01.sys_user
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Statement >> Method: com.alibaba.druid.filter.logging.Log4jFilter.statementLog(Log4jFilter.java:137) ]
+DEBUG:{conn-10002, pstmt-20000} Parameters : []
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Statement >> Method: com.alibaba.druid.filter.logging.Log4jFilter.statementLog(Log4jFilter.java:137) ]
+DEBUG:{conn-10002, pstmt-20000} Types : []
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Statement >> Method: com.alibaba.druid.filter.logging.Log4jFilter.statementLog(Log4jFilter.java:137) ]
+DEBUG:{conn-10002, pstmt-20000} executed. 12.3081 millis. select
+        id, name, nick_name, avatar, password, salt, email, mobile, status, dept_id, create_by, create_time,
+        last_update_by, last_update_time, del_flag
+        from wechatdemo01.sys_user
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.ResultSet >> Method: com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(Log4jFilter.java:142) ]
+DEBUG:{conn-10002, pstmt-20000, rs-50000} open
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.ResultSet >> Method: com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(Log4jFilter.java:142) ]
+DEBUG:{conn-10002, pstmt-20000, rs-50000} Header: [id, name, nick_name, avatar, password, salt, email, mobile, status, dept_id, create_by, create_time, last_update_by, last_update_time, del_flag]
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.ResultSet >> Method: com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(Log4jFilter.java:142) ]
+DEBUG:{conn-10002, pstmt-20000, rs-50000} Result: [34, test, null, null, null, null, null, null, null, null, null, null, null, null, 0]
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.ResultSet >> Method: com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(Log4jFilter.java:142) ]
+DEBUG:{conn-10002, pstmt-20000, rs-50000} closed
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Statement >> Method: com.alibaba.druid.filter.logging.Log4jFilter.statementLog(Log4jFilter.java:137) ]
+DEBUG:{conn-10002, pstmt-20000} clearParameters. 
+2021-01-26 09:39:35 上午 [Thread: http-nio-8081-exec-4][ Class:druid.sql.Connection >> Method: com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(Log4jFilter.java:132) ]
+DEBUG:{conn-10002} pool-recycle
+2021-01-26 09:40:22 上午 [Thread: SpringContextShutdownHook][ Class:druid.sql.Statement >> Method: com.alibaba.druid.filter.logging.Log4jFilter.statementLog(Log4jFilter.java:137) ]
+DEBUG:{conn-10002, pstmt-20000} closed
+2021-01-26 09:40:22 上午 [Thread: SpringContextShutdownHook][ Class:druid.sql.Connection >> Method: com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(Log4jFilter.java:132) ]
+DEBUG:{conn-10002} closed
